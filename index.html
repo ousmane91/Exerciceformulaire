@@ -84,11 +84,22 @@
     <label for="c">C#</label>
     <textarea name="name" rows="8" cols="80"></textarea>
     <br /><br />
-    Quelle est ton OS pour travailler:
-    <label for="Civility">Civilité</label>
-    <select name="Civility" id="Civility">
-      <option value="man">homme</option>"
-      <option value="woman">femme</option>
+
+    <label for="os">Quelle est ton OS pour travailler:</label>
+    <select name="os" id="os">
+      <optgroup label="Windows">
+        <option value="Windows10">Windows10</option>
+        <option value="Windows8">Windows8</option>
+        <option value="Windows7">Windows7</option>
+      </optgroup>
+      <optgroup label="LINUX">
+        <option value="Ubuntu">Ubuntu</option>
+        <option value="Debian">Debian</option>
+      </optgroup>
+      <optgroup label="Autres">
+        <option value="MacOS">MacOS</option>
+        <option value="ChromeOS">ChromeOS</option>
+        <option value="autre">autre</option>
     </select>
     </p>
 
