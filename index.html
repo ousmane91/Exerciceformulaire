@@ -1,110 +1,150 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <h1>Formulaire d'inscription</h1>
-
-    <h2>Présente toi :)</h2>
-
+<head>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="container">
+    <h1>Page d'inscription à un site de développeur</h1>
+  </div>
+  <!--1ère PARTIE-->
+  <img src="images/emoji.png" />
+  <form method="post" action="">
 
     <fieldset id="one">
 
-    <legend>Qui es-tu?</legend>
+      <legend>Qui es-tu?</legend>
 
-    <p>
-    <label for="Civility">Civilité</label>
-    <select name="Civility" id="Civility">
-      <option value="man">homme</option>"
-      <option value="woman">femme</option>
-    </select>
-    <br />  <br />
-    <label for="lastname">Nom</label>
-    <input type="text" name="lastname"  id="lastname" placeholder="Votre Nom" />
-    <br />  <br />
-    <label for="firstname">Prénom</label>
-    <input type="text" name="firstname" id="firstname" placeholder="Votre Prénom" />
-    <br />  <br />
-    <label for="telephone">Numéro de téléphone</label>
-    <input type="text" name="phone" id="phone" placeholder="Votre numéro de téléphone" />
-    <br />  <br />
-    <label for="street">Numéro de rue</label>
-    <input type="text" name="street"  id="street" placeholder="Votre numéro de rue" />
-    <label for="namestreet">Nom de rue</label>
-    <input type="text" name="namestreet"  id="namestreet" placeholder="Votre numéro de téléphone" />
-    <br />
-    <label for="zipcode">Code postal</label>
-    <input type="text" name="zipcode" id="zipcode" placeholder="Votre code postal" />
-    <br />
-    <label for="town">Ville</label>
-    <input type="text" name="town"  id="town" placeholder="Votre ville" />
-    <br />
-    <label for="login">Choix du login</label>
-    <input type="text" name="login" id="login" placeholder="Votre login" />
-    <label for="pass">Choix du pass</label>
-    <input type="password" name="pass" id="pass" placeholder="Votre mot de pass" />
-    </p>
+      <p>
+        <label for="Civility">Civilité</label>
+        <select name="Civility" id="Civility">
+          <option value="man">homme</option>"
+          <option value="woman">femme</option>
+        </select>
+        <br />  <br />
+        <label for="lastname">Nom</label>
+        <input type="text" name="lastname"  id="lastname" placeholder="Votre Nom" />
+        <br />  <br />
+        <label for="firstname">Prénom</label>
+        <input type="text" name="firstname" id="firstname" placeholder="Votre Prénom" />
+        <br />  <br />
+        <label for="telephone">Numéro de téléphone</label>
+        <input type="text" name="phone" id="phone" placeholder="Votre numéro de téléphone" />
+        <br />  <br />
+        <label for="street">Numéro de rue</label>
+        <input type="text" name="street"  id="street" placeholder="Votre numéro de rue" />
+        <label for="namestreet">Nom de rue</label>
+        <input type="text" name="namestreet"  id="namestreet" placeholder="Votre numéro de téléphone" />
+        <br /> <br />
+        <label for="zipcode">Code postal</label>
+        <input type="text" name="zipcode" id="zipcode" placeholder="Votre code postal" />
+        <br /><br />
+        <label for="town">Ville</label>
+        <input type="text" name="town"  id="town" placeholder="Votre ville" />
+        <br /><br />
+        <label for="login">Choix du login</label>
+        <input type="text" name="login" id="login" placeholder="Votre login" />
+        <label for="pass">Choix du pass</label>
+        <input type="password" name="pass" id="pass" placeholder="Votre mot de pass" />
+      </p>
 
     </fieldset>
 
 
+
     <!-- 2ème partie -->
-    <h2>Devellope :)</h2>
+    <img src="images/emoji.png" />
 
 
     <fieldset id="two">
 
-    <legend>Que sait-tu?</legend>
-    <p>
-      Quelle est ton niveau en tant que développeur:
-      <br />
-    <input type="radio" name="begin" value="begin">
-    <label for="level">Débutant</label>
-    <input type="radio" name="junior" value="junior">
-    <label for="level">Junior</label>
-    <input type="radio" name="expert" value="expert">
-    <label for="level">Expert</label>
-    <br /><br />
-    Quelles sont tes connaissances dans se(s) langage(s)coché(s):
-    <input type="checkbox" name="ruby" id="ruby" />
-    <label for="ruby">Ruby</label>
-    <input type="checkbox" name="python" id="python" />
-    <label for="python">Python</label>
-    <input type="checkbox" name="php" id="php" />
-    <label for="php">PHP</label>
-    <input type="checkbox" name="java" id="java" />
-    <label for="java">Java</label>
-    <input type="checkbox" name="nodejs" id="nodejs" />
-    <label for="nodejs">NodeJS</label>
-    <input type="checkbox" name="reactjs" id="reactjs" />
-    <label for="reactjs">ReactJS</label>
-    <input type="checkbox" name="c" id="c" />
-    <label for="c">C#</label>
-    <textarea name="name" rows="8" cols="80"></textarea>
-    <br /><br />
+      <legend>Que sait-tu?</legend>
+      <p>
+        Quelle est ton niveau en tant que développeur:
+        <br />
+        <input type="radio" name="level" value="begin" id="begin">
+        <label for="begin">Débutant</label>
+        <input type="radio" name="level" value="junior" id="junior">
+        <label for="junior">Junior</label>
+        <input type="radio" name="level" value="expert" id="expert">
+        <label for="expert">Expert</label>
+        <br /><br />
+        Quelles sont tes connaissances dans se(s) langage(s)coché(s):
+        <input type="checkbox" name="ruby" id="ruby" />
+        <label for="ruby">Ruby</label>
+        <input type="checkbox" name="python" id="python" />
+        <label for="python">Python</label>
+        <input type="checkbox" name="php" id="php" />
+        <label for="php">PHP</label>
+        <input type="checkbox" name="java" id="java" />
+        <label for="java">Java</label>
+        <input type="checkbox" name="nodejs" id="nodejs" />
+        <label for="nodejs">NodeJS</label>
+        <input type="checkbox" name="reactjs" id="reactjs" />
+        <label for="reactjs">ReactJS</label>
+        <input type="checkbox" name="c" id="c" />
+        <label for="c">C#</label>
+        <textarea name="name" rows="4" cols="80"></textarea>
+        <br /><br />
 
-    <label for="os">Quelle est ton OS pour travailler:</label>
-    <select name="os" id="os">
-      <optgroup label="Windows">
-        <option value="Windows10">Windows10</option>
-        <option value="Windows8">Windows8</option>
-        <option value="Windows7">Windows7</option>
-      </optgroup>
-      <optgroup label="LINUX">
-        <option value="Ubuntu">Ubuntu</option>
-        <option value="Debian">Debian</option>
-      </optgroup>
-      <optgroup label="Autres">
-        <option value="MacOS">MacOS</option>
-        <option value="ChromeOS">ChromeOS</option>
-        <option value="autre">autre</option>
-    </select>
-    </p>
+        <label for="os">Quelle est ton OS pour travailler:</label>
+        <select name="os" id="os">
+          <optgroup label="Windows">
+            <option value="Windows10">Windows10</option>
+            <option value="Windows8">Windows8</option>
+            <option value="Windows7">Windows7</option>
+          </optgroup>
+          <optgroup label="LINUX">
+            <option value="Ubuntu">Ubuntu</option>
+            <option value="Debian">Debian</option>
+          </optgroup>
+          <optgroup label="Autres">
+            <option value="MacOS">MacOS</option>
+            <option value="ChromeOS">ChromeOS</option>
+            <option value="autre">autre</option>
+          </select>
+        </p>
 
 
 
-    </fieldset>
+      </fieldset>
+
+      <!--3ème PARTIE-->
+      <img src="images/emoji.png" />
+
+      <fieldset id="three">
+
+        <legend>Qu'à tu fais?</legend>
+
+
+        <p>
+          <label for"formation">
+            Quand es-tu entrée en formation?(Précisez le mois et l'année d'entrée)
+          </label>
+          <br />
+          <textarea name="formation" id="formation" rows="1" cols="30">
+          </textarea>
+          <br /><br />
+          <label for"github">
+            Renseigne l'url de ton Github
+          </label>
+          <br />
+          <textarea name="github" id="github" rows="1" cols="30">
+          </textarea>
+          <br /><br />
+          <label for"comment">
+            Si tu veut laisser un commentaire
+          </label>
+          <br />
+          <textarea name="comment" id="comment" rows="3" cols="30">
+          </textarea>
+          <br /><br />
+          <input type="submit" value="Envoyer" id="ship" />
+
+        </p>
+      </fieldset>
+    </form>
+
   </body>
-</html>
+  </html>
